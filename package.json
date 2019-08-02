@@ -22,6 +22,11 @@
     "package:prod": "rimraf packages && webpack --config build/package.prod.config.js",
     "package": "rimraf packages && npm run package:prod && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementyjk/yjk-mui.git"
+  },
+  "homepage": "https://github.com/elementyjk/yjk-mui",
   "dependencies": {
     "vue": "^2.5.2"
   },
