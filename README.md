@@ -1,6 +1,6 @@
 # yjk-mui
 
-[![Build Status](https://img.shields.io/badge/npm-v4.3.0-blue)]
+[![Build Status](https://img.shields.io/badge/build-passing-green)](https://www.npmjs.com/package/yjk-mui)
 [![npm](https://img.shields.io/badge/npm-v4.3.0-blue)](https://www.npmjs.com/package/yjk-mui)
 [![vue](https://img.shields.io/badge/vue-v2.5.17-blue)](https://vuejs.org/index.html)
 
