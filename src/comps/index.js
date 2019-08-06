@@ -7,6 +7,7 @@ import Nation from './components/nation/index'
 import CommonPicker from './components/common-picker/index'
 import DailyPicker from './components/daily-picker/index'
 import WeekDate from './components/week-date/index'
+import Counter from './components/counter/index'
 
 const components = {
   Button,
@@ -16,7 +17,8 @@ const components = {
   Nation,
   CommonPicker,
   DailyPicker,
-  WeekDate
+  WeekDate,
+  Counter
 }
 
 const install = function (Vue) {
@@ -40,5 +42,6 @@ export default {
   Nation,
   CommonPicker,
   DailyPicker,
-  WeekDate
+  WeekDate,
+  Counter
 }
