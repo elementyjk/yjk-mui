@@ -3,7 +3,7 @@ const merge = require('webpack-merge')
 const config = require('../config')
 const baseWebpackConfig = require('./package.config')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const extractScss = new ExtractTextPlugin('/yjkmui.min.css')
+const extractCss = new ExtractTextPlugin('/yjkmui.min.css')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
@@ -33,7 +33,7 @@ module.exports = merge(baseWebpackConfig, {
         }
       }
     }),
-    extractScss,
+    extractCss,
     new OptimizeCSSPlugin({
       assetNameRegExp: /\.min\.css$/g,
       cssProcessorOptions: config.build.productionSourceMap

@@ -18,8 +18,8 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
     "clear": "rimraf packages/",
-    "package:dev": "rimraf packages && webpack --config build/package.dev.config.js",
-    "package:prod": "rimraf packages && webpack --config build/package.prod.config.js",
+    "package:dev": "rimraf packages && webpack --hide-modules --config  build/package.dev.config.js",
+    "package:prod": "rimraf packages && webpack --hide-modules --config build/package.prod.config.js",
     "package": "rimraf packages && npm run package:prod && npm run build"
   },
   "repository": {
