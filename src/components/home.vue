@@ -43,6 +43,9 @@
     <ym-week-date :title="'今天(' + title + ')'" :docMsgList="[ { duty_date: title, doctor_name: '李强', duty_arrange: '上午班' } ]"></ym-week-date>
     <ym-week-date title="下周" :propsDate="propsDate" @getDate="getWeek" :docMsgList="docMsgList"></ym-week-date>
     <br/><br/>
+    <h4>计数器</h4>
+    <ym-counter @changenum="changenum"></ym-counter>
+    <br/><br/>
   </div>
 </template>
 
@@ -120,6 +123,9 @@ export default {
       ]
     },
     confirm (values) {
+      console.log(values)
+    },
+    changenum (values) {
       console.log(values)
     }
   }
